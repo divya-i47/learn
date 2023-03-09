@@ -576,17 +576,9 @@ p {
   }
 }
 
-.static {
-  position: static;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
-}
-
-.mb-10 {
-  margin-bottom: 2.5rem;
 }
 
 .mt-4 {
@@ -599,6 +591,10 @@ p {
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.inline-block {
+  display: inline-block;
 }
 
 .h-16 {
@@ -646,19 +642,14 @@ p {
   border-color: rgb(96 165 250 / var(--tw-border-opacity));
 }
 
-.object-center {
-  -o-object-position: center;
-     object-position: center;
+.px-36 {
+  padding-left: 9rem;
+  padding-right: 9rem;
 }
 
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .pt-12 {
@@ -671,11 +662,6 @@ p {
 
 .text-right {
   text-align: right;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
 }
 
 .text-blue-400 {
