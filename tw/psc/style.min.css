@@ -613,10 +613,6 @@ p {
   height: 6rem;
 }
 
-.h-32 {
-  height: 8rem;
-}
-
 .h-64 {
   height: 16rem;
 }
@@ -649,8 +645,8 @@ p {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.items-center {
-  align-items: center;
+.justify-center {
+  justify-content: center;
 }
 
 .rounded-2xl {
@@ -677,6 +673,11 @@ p {
 .border-blue-400 {
   --tw-border-opacity: 1;
   border-color: rgb(96 165 250 / var(--tw-border-opacity));
+}
+
+.border-red-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(239 68 68 / var(--tw-border-opacity));
 }
 
 .bg-red-400 {
