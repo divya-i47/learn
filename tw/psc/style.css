@@ -22,3 +22,73 @@
     }
    
 }
+
+@layer utilities {
+    .bg-custom {
+      background-color: rgba(231, 233, 235,1);
+    }
+    .bg-custom1 {
+        background-color: rgba(96, 108, 56, 1);
+        
+  }
+  .bg-custom2{
+    background-color:rgba(96, 108, 56, 0.15)
+  }
+  .text-custom{
+    color: rgba(254, 250, 224, 1);
+  }
+  
+.text-custom1{
+    color: rgba(40, 54, 24, 1);
+
+}
+.text-custom2{
+    color: rgba(40, 54, 24, 0.35);
+
+}
+.text-custom3 {
+  color: rgba(96, 108, 56, 1);
+}
+.text-custom4{
+  color:rgba(0, 0, 0, 0.56);
+}
+.text-custom5 {
+  color:rgba(249, 138, 7, 1);
+}
+.border-custom3{
+  color:rgba(249, 138, 7, 1);
+}
+.border-custom{
+border-color: rgba(148, 82, 4, 1);
+}
+.bg-custom3{
+background-color: rgba(245, 245, 245, 1);
+}
+.border-custom1{
+border-color:rgba(96, 108, 56, 1);
+}
+.border-custom2{
+border-color: rgba(217, 217, 217, 0.6);
+}
+.bg-custom4{
+  background-color:rgba(255, 255, 255, 1);
+}
+.bg-custom5{
+ background-color:
+ rgba(255, 216, 158, 0.33);
+}
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/path/to/fonts/Inter-Regular.woff2') format('woff2');
+  }
+  .container svg {
+    margin-right: 10px; 
+}
+.h-px{
+  height: 428px;
+}
+
+  
+}
