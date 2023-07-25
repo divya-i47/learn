@@ -600,6 +600,10 @@ p {
   top: 0.25rem;
 }
 
+.col-span-3 {
+  grid-column: span 3 / span 3;
+}
+
 .m-6 {
   margin: 1.5rem;
 }
@@ -611,6 +615,10 @@ p {
 
 .ml-2 {
   margin-left: 0.5rem;
+}
+
+.ml-36 {
+  margin-left: 9rem;
 }
 
 .ml-4 {
@@ -727,10 +735,6 @@ p {
 
 .h-64 {
   height: 16rem;
-}
-
-.h-7 {
-  height: 1.75rem;
 }
 
 .h-8 {
@@ -908,6 +912,11 @@ p {
 .border-gray-500 {
   --tw-border-opacity: 1;
   border-color: rgb(107 114 128 / var(--tw-border-opacity));
+}
+
+.bg-orange-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 146 60 / var(--tw-bg-opacity));
 }
 
 .bg-red-400 {
