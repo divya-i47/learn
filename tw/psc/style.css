@@ -83,12 +83,18 @@ border-color: rgba(217, 217, 217, 0.6);
 .border-custom6{
   border-color:rgba(0, 109, 119, 0.5);
 }
+.bg-custom7{
+  background-color:rgba(255, 216, 158, 0.34);
+}
 }
 @font-face {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     src: url('/path/to/fonts/Inter-Regular.woff2') format('woff2');
+  }
+  .text-custom{
+    text-decoration-color: rgba(249, 138, 7, 0.74);
   }
   .container svg {
     margin-right: 10px; 
