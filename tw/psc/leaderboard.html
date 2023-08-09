@@ -44,23 +44,13 @@
         </h1>
       </div>
 
-
-      <div class="flex items-center justify-center">
-        <div class="relative inline-flex items-center">
-          <input type="checkbox" id="toggle" class="hidden">
-          <div class="w-56 h-8 rounded-full bg-custom6">
-            <label for="toggle" class="flex items-end justify-end cursor-pointer">
-              <span class="mt-1 mr-6 font-medium text-gray-500 text-md">All Time</span>
-            </label>
-
-            <div class="absolute h-6 bg-white rounded-full dot left-1 top-1 w-28">
-              <label for="toggle" class="flex items-center cursor-pointer">
-                <span class="ml-auto mr-auto font-medium text-gray-800 text-md">Weekly</span>
-              </label>
-            </div>
-          </div>
-
-        </div>
+      <div class="flex mx-auto justify-items-center toggle-switch">
+        <input type="checkbox" id="toggleSwitch" class="sr-only bg-custom9">
+        <label for="toggleSwitch" class="mx-auto toggle-label bg-custom9">
+          <div class="text-gray-800 label">Weekly</div>
+          <div class="ml-6 text-gray-800 label">All Time</div>
+          <div class="rounded-xl dot"></div>
+        </label>
       </div>
       <div class="h-16"></div>
       <div class="flex items-end justify-center mx-auto">
