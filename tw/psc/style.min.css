@@ -613,8 +613,16 @@ p {
   position: fixed;
 }
 
+.relative {
+  position: relative;
+}
+
 .bottom-0 {
   bottom: 0px;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .col-span-3 {
@@ -748,10 +756,6 @@ p {
 
 .h-full {
   height: 100%;
-}
-
-.h-screen {
-  height: 100vh;
 }
 
 .min-h-screen {
@@ -934,11 +938,6 @@ p {
 .bg-custom9 {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-gray-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
 .bg-red-400 {
@@ -1191,7 +1190,7 @@ p {
 }
 
 .bg-custom8{
-  background-color:rgba(0, 109, 119, 0.1);
+  background-color:rgb(206, 224, 226);
 }
 
 .bg-custom9{
@@ -1248,6 +1247,73 @@ p {
 #toggleSwitch:checked ~ .toggle-label .dot {
   transform: translateX(118%);
   width: 4rem;
+}
+
+.animate-entry {
+  animation: animateBarEntry 1.5s ease-out forwards;
+  position: relative;
+  z-index: 5;
+}
+
+.animate-entry3 {
+  animation: animateBarEntry3 1.5s ease-out forwards;
+  position: relative;
+  z-index: 5;
+  transform: translateY(15%);
+}
+
+@keyframes animateBarEntry {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  25% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  26% {
+    transform: translateY(100%);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes animateBarEntry3 {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  25% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  26% {
+    transform: translateY(100%);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(15%);
+    opacity: 1;
+  }
+}
+
+.animating-container {
+  z-index: 0;
+  position: relative;
+}
+
+.lb-list {
+  z-index: 1;
+  position: relative;
 }
 
 .hover\:bg-custom2:hover{
