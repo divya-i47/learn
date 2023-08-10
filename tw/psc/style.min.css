@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
+! tailwindcss v3.2.7 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -31,7 +31,6 @@
 3. Use a more readable tab size.
 4. Use the user's configured `sans` font-family by default.
 5. Use the user's configured `sans` font-feature-settings by default.
-6. Use the user's configured `sans` font-variation-settings by default.
 */
 
 html {
@@ -48,8 +47,6 @@ html {
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
-  font-variation-settings: normal;
-  /* 6 */
 }
 
 /*
@@ -190,10 +187,6 @@ optgroup,
 select,
 textarea {
   font-family: inherit;
-  /* 1 */
-  font-feature-settings: inherit;
-  /* 1 */
-  font-variation-settings: inherit;
   /* 1 */
   font-size: 100%;
   /* 1 */
@@ -346,14 +339,6 @@ menu {
 }
 
 /*
-Reset default styling for dialogs.
-*/
-
-dialog {
-  padding: 0;
-}
-
-/*
 Prevent resizing textareas horizontally by default.
 */
 
@@ -477,9 +462,6 @@ p {
   --tw-pan-y:  ;
   --tw-pinch-zoom:  ;
   --tw-scroll-snap-strictness: proximity;
-  --tw-gradient-from-position:  ;
-  --tw-gradient-via-position:  ;
-  --tw-gradient-to-position:  ;
   --tw-ordinal:  ;
   --tw-slashed-zero:  ;
   --tw-numeric-figure:  ;
@@ -527,9 +509,6 @@ p {
   --tw-pan-y:  ;
   --tw-pinch-zoom:  ;
   --tw-scroll-snap-strictness: proximity;
-  --tw-gradient-from-position:  ;
-  --tw-gradient-via-position:  ;
-  --tw-gradient-to-position:  ;
   --tw-ordinal:  ;
   --tw-slashed-zero:  ;
   --tw-numeric-figure:  ;
@@ -834,10 +813,6 @@ p {
   width: 100%;
 }
 
-.w-screen {
-  width: 100vw;
-}
-
 .max-w-md {
   max-width: 28rem;
 }
@@ -1137,11 +1112,6 @@ p {
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
-.text-gray-500 {
-  --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
-}
-
 .text-gray-800 {
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity));
@@ -1218,10 +1188,6 @@ p {
  rgba(255, 216, 158, 0.33);
 }
 
-.bg-custom6{
-  background-color:rgba(0, 109, 119, 0.5);
-}
-
 .border-custom6{
   border-color:rgba(0, 109, 119, 0.5);
 }
@@ -1236,6 +1202,30 @@ p {
 
 .bg-custom9{
   background-color:rgba(0, 109, 119, 1);
+}
+
+/* Add transitions to smoothly change the position of the dot */
+
+.dot {
+  transition: left 0.3s ease-in-out;
+}
+
+/* Define the animation for moving the dot */
+
+@keyframes moveDot {
+  from {
+    left: 1px;
+  }
+
+  to {
+    left: 29px;
+  }
+}
+
+/* Apply the animation when the checkbox is checked */
+
+#toggle:checked + .w-56 .dot {
+  animation: moveDot 0.3s ease-in-out forwards;
 }
 
 @font-face {

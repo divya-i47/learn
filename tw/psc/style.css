@@ -93,6 +93,26 @@ border-color: rgba(217, 217, 217, 0.6);
 .bg-custom9{
   background-color:rgba(0, 109, 119, 1);
 }
+/* Add transitions to smoothly change the position of the dot */
+.dot {
+  transition: left 0.3s ease-in-out;
+}
+
+/* Define the animation for moving the dot */
+@keyframes moveDot {
+  from {
+    left: 1px;
+  }
+  to {
+    left: 29px;
+  }
+}
+
+/* Apply the animation when the checkbox is checked */
+#toggle:checked + .w-56 .dot {
+  animation: moveDot 0.3s ease-in-out forwards;
+}
+
 }
 @font-face {
     font-family: 'Inter';
