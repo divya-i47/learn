@@ -137,5 +137,24 @@
 
 
   </div>
+  <script>
+    const checkbox = document.getElementById('toggleSwitch');
+    const animatedElements = document.querySelectorAll('.animate-entry');
+    const animatedElement3 = document.querySelector('.animate-entry3');
 
+    checkbox.addEventListener('change', () => {
+      animatedElements.forEach(element => {
+          element.style.animation = 'none';
+          element.style.transform = 'scale(1) translateY(0)';
+          element.offsetHeight;
+          element.style.animation = 'animateBarEntry 1.5s ease-in-out';
+        });
+
+        animatedElement3.style.animation = 'none';
+        animatedElement3.style.transform = 'scale(1) translateY(15%)';
+        animatedElement3.offsetHeight;
+        animatedElement3.style.animation = 'animateBarEntry3 1.5s ease-in-out';
+      
+    });
+  </script>
 </body>

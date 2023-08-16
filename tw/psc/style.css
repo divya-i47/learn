@@ -163,13 +163,13 @@ border-color: rgba(217, 217, 217, 0.6);
 }
 
 .animate-entry {
-  animation: animateBarEntry 1.5s ease-out forwards;
+  animation: animateBarEntry 1.5s ease-in-out;
   position: relative;
   z-index: 5;
 }
 
 .animate-entry3 {
-  animation: animateBarEntry3 1.5s ease-out forwards;
+  animation: animateBarEntry3 1.5s ease-in-out;
   position: relative;
   z-index: 5;
   transform: translateY(15%);
