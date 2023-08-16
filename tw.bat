@@ -1,0 +1,1 @@
+npx tailwindcss -i C:\learning\learn\tw\psc\style.css -o C:\learning\learn\tw\psc\style.min.css
